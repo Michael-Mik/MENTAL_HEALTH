@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="stylem.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    
+
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               
+            </div>
+    
+    
+        </div>
+    </div>
+
+<!----Account Page-->
+<div class="account-page">
+    <div class="container">
+    <div class="row">
+    <div class="col-2">
+       
+    </div>
+    <div class="col-2">
+        <div class="form-container">
+            <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <hr id="Indicator">
+            </div>
+
+<form id="LoginForm">
+    <input type="text" placeholder="Name">
+    <input type="Password" placeholder="Password">
+    <button type="submit" class="btn">Login</button>
+    <a href="">Forgot Password</a>
+</form>
+<form id="RegForm" method="POST" action="connect.php">
+    
+    <input type="text" placeholder="Name" name="Name">
+    <input type="Email" placeholder="Email" name="Email">
+    <input type="PhoneNumber" placeholder="PhoneNumber" name="PhoneNumber">
+     <input type="Password" placeholder="Enter_Password" name="Enter_Password">
+    <button type="submit" name="submit" value="submit" class="btn">submit</button>
+
+</form>
+
+
+
+
+        </div>
+    </div>
+</div></div>
+       
+
+
+</body>
+</html>
+    </div>
+</div>
+
+
+    <div class="small-container">
+        
+        
+        </div>
+        
+            
+       
+<hr>
+
+    </div>
+</div>
+<!--------js for toggle menu----->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+
+        
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+    
+</script>
+<!--------js for toggle Form----->
+<script>
+    var LoginForm=document.getElementById("LoginForm");
+    var RegForm=document.getElementById("RegForm");
+    var Indicator=document.getElementById("Indicator");
+    function register() {
+        RegForm.style.transform="translatex(0px)";
+        LoginForm.style.transform="translatex(0px)";
+        Indicator.style.transform="translatex(100px)";
+    }
+    function login() {
+        RegForm.style.transform="translatex(300px)";
+        LoginForm.style.transform="translatex(300px)";
+        Indicator.style.transform="translatex(0px)";
+    }
+</script>
+
+
+</body>
+</html>
